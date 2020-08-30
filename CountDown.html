@@ -41,7 +41,7 @@ smalltext{
 </style> 
 </head> 
 <body> 
-<h1>Are you ready? Countdown has began ...</h1> 
+<h1>Married Since...</h1> 
 <div id="clockdiv"> 
   <div> 
     <span class="days" id="day"></span> 
@@ -65,12 +65,12 @@ smalltext{
   
 <script> 
   
-var deadline = new Date("mar 04, 2020 08:15:00").getTime(); 
+var deadline = new Date("mar 04, 2020 08:30:00").getTime(); 
   
 var x = setInterval(function() { 
   
 var now = new Date().getTime(); 
-var t = deadline - now; 
+var t = now - deadline ; 
 var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
 var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
 var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
